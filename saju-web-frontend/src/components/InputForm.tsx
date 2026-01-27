@@ -7,7 +7,7 @@ import { Sparkles, Clipboard, Check } from "lucide-react";
 import SajuResultView from "./results/SajuResultView";
 import { SajuFormData, SajuResult } from "@/lib/types";
 
-import { SajuFormData, SajuResult } from "@/lib/types";
+
 
 // Helper for safer access
 const getStr = (val: string | undefined | null) => val || "";
