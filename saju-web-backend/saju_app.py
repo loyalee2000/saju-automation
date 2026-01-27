@@ -2301,17 +2301,7 @@ except ImportError:
     font = None
 import threading
 import json
-import threading
 
-import tkinter as tk
-from tkinter import ttk, messagebox, font
-import json
-import threading
-
-import tkinter as tk
-from tkinter import ttk, messagebox
-import json
-import os
 
 class SajuApp:
     def __init__(self, root):
