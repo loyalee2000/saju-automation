@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import { Button } from "./ui/Button";
-import { SajuInput } from "@/lib/types";
+import { SajuFormData } from "@/lib/types";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/Card";
 import { Moon, Sun } from "lucide-react";
 
 interface SajuFormProps {
-    onSubmit: (data: SajuInput) => void;
+    onSubmit: (data: SajuFormData) => void;
     isLoading: boolean;
 }
 
@@ -27,13 +27,17 @@ export default function SajuForm({ onSubmit, isLoading }: SajuFormProps) {
         e.preventDefault();
         onSubmit({
             name,
-            gender,
-            year: Number(year),
-            month: Number(month),
-            day: Number(day),
-            hour: Number(hour),
-            minute: Number(minute),
-            is_lunar: isLunar,
+            gender: gender === "남" ? "male" : "female",
+            year: String(year),
+            month: String(month),
+            day: String(day),
+            hour: String(hour),
+            minute: String(minute),
+            calendarType: isLunar ? "lunar" : "solar",
+            timeUnknown: false,
+            isLeapMonth: false,
+            location: "Seoul", // Default value
+
         });
     };
 
