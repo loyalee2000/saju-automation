@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>로얄리 인생 설명서</title>
+    <style>
+        /* ------------------------------------------------------------------
+           FONTS & TYPOGRAPHY
+           ------------------------------------------------------------------ */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+        /* ------------------------------------------------------------------
+           GLOBAL RESET & PRINT SETTINGS
+           ------------------------------------------------------------------ */
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100%;
+            height: 100%;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Nanum Myeongjo', serif;
+            color: #2b2b2b;
+            background-color: #333;
+            /* Dark during dev/screen */
+        }
+
+        /* ------------------------------------------------------------------
+           FINAL STRATEGY: CONTENT ONLY (Clean Overlay Target)
+           ------------------------------------------------------------------ */
+        @media print {
+            @page {
+                size: A4;
+                margin: 35mm 20mm 25mm 20mm !important;
+                /* SAFE Standard Margins */
+            }
+
+            html,
+            body {
+                width: auto !important;
+                height: auto !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                background: none !important;
+                background-color: transparent !important;
+            }
+
+            .print-frame {
+                display: none !important;
+            }
+
+            /* Headers/Footers: Fixed in Margin Box */
+            .page-header {
+                position: fixed;
+                top: -25mm;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                font-size: 9pt;
+                color: #888;
+                border: none;
+            }
+
+            .page-footer {
+                position: fixed;
+                bottom: -15mm;
+                left: 0;
+                width: 100%;
+                text-align: right;
+                font-size: 8pt;
+                color: #aaa;
+                border: none;
+            }
+
+            /* Content Layer - NO MORE .page WRAPPERS */
+            .content-layer {
+                display: block;
+                width: 100%;
+            }
+
+            /* Cover Page centering via Padding (Block Level Safe) */
+            .cover-wrapper {
+                display: block;
+                width: 100%;
+                height: auto;
+                /* Let content dictate height */
+                padding-top: 40mm;
+                /* Reduced padding to prevent blank pages */
+                padding-bottom: 0mm;
+                /* No bottom padding to prevent blank pages */
+                text-align: center;
+                page-break-after: always;
+                /* Force break after cover */
+            }
+
+            /* Breaks */
+            h2.chapter-title {
+                page-break-before: always;
+            }
+
+            /* Safety: Prevent single lines at bottom */
+            p {
+                orphans: 2;
+                widows: 2;
+            }
+        }
+
+        /* Watermark */
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            /* Center relative to margin box, might need adjustment, but this is usually safe */
+            transform: translate(-50%, -50%);
+            width: 400px;
+            opacity: 0.05;
+            /* Very subtle */
+            z-index: 0;
+            mix-blend-mode: multiply;
+            pointer-events: none;
+        }
+
+        /* ------------------------------------------------------------------
+           SCREEN STYLES (Preview Mode)
+           ------------------------------------------------------------------ */
+        @media screen {
+            .page {
+                width: 210mm;
+                min-height: 296mm;
+                /* BUFFER: 1mm less than A4 to absorb micro-overflows */
+                box-sizing: border-box;
+                background-color: #f4efe4;
+                padding: 50mm 25mm 30mm 25mm;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                border: 1px solid #cbb89d;
+                outline: 5px double #cbb89d;
+                outline-offset: -15px;
+            }
+
+            .print-frame,
+            .page-header,
+            .page-footer,
+            .watermark {
+                display: none;
+                /* Simplify screen view or mock it if needed */
+            }
+        }
+
+        /* 
+           CRITICAL FIX: Allow EVERYTHING to break across pages.
+           Prevent clusters of text from refusing to split and forcing new pages.
+        */
+        @media print {
+
+            /* Target specific content elements, not * (Universal Selector) */
+            p,
+            pre,
+            blockquote,
+            table,
+            figure,
+            ul,
+            ol,
+            li {
+                page-break-inside: auto !important;
+                break-inside: auto !important;
+            }
+
+            /* Keep Headers with next content if possible */
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                page-break-after: avoid;
+                page-break-inside: avoid;
+            }
+        }
+
+        /* ------------------------------------------------------------------
+           COMPONENT STYLES
+           ------------------------------------------------------------------ */
+        p {
+            font-size: 15pt;
+            /* User Requested 15pt */
+            line-height: 1.6;
+            /* Adjusted for larger font */
+            text-align: justify;
+            word-break: keep-all;
+            margin-bottom: 20px;
+            orphans: 1;
+            widows: 1;
+            /* Allow single lines to remain/move - maximizes space usage */
+        }
+
+        /* Hide empty elements that might force new pages */
+        p:empty,
+        div:empty,
+        span:empty {
+            display: none !important;
+        }
+
+        h2.chapter-title {
+            font-size: 22pt;
+            text-align: center;
+            margin-top: 0;
+            /* Reset */
+            margin-bottom: 40px;
+            font-weight: 800;
+            color: #111;
+        }
+
+        /* Cover Page Specifics */
+        /* .cover-container is now defined in @media print for print-specific height */
+        .cover-title {
+            font-size: 36pt;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .cover-subtitle {
+            font-size: 14pt;
+            margin-bottom: 50px;
+            color: #555;
+        }
+
+        /* Table Strategy: Robust Center Axis */
+        .info-table {
+            border-top: 2px solid #333;
+            border-bottom: 2px solid #333;
+            margin: 40px auto;
+            border-collapse: collapse;
+            width: 140mm;
+            /* Fixed comfortable width */
+        }
+
+        .info-table td {
+            width: 50%;
+            /* Force exact half split */
+            padding: 12px 20px;
+            font-size: 13pt;
+            vertical-align: middle;
+        }
+
+        .info-label {
+            text-align: right;
+            font-weight: bold;
+            color: #555;
+            border-right: 1px solid #ccc;
+            /* Central Axis Line guide */
+        }
+
+        .info-value {
+            text-align: left;
+            font-weight: bold;
+            color: #111;
+        }
+
+        /* Saju Grid Strategy: Flexible Boxes */
+        .saju-grid {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px 0;
+            padding: 15px;
+        }
+
+        .saju-col {
+            flex: 1;
+            background: #fdfbf7;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #e0d0b8;
+            min-width: 0;
+            /* Allow shrinking if needed */
+        }
+
+        .saju-header {
+            display: block;
+            background: #e0d0b8;
+            color: #444;
+            font-weight: bold;
+            padding: 5px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            font-size: 9pt;
+        }
+
+        .char-box {
+            display: block;
+            margin: 5px auto;
+            font-size: 16pt;
+            font-weight: bold;
+            /* Auto sizing to prevent overlap */
+            width: auto;
+            height: auto;
+            min-width: 30px;
+            min-height: 40px;
+            line-height: normal;
+            padding: 5px;
+            color: #333;
+            word-break: keep-all;
+            /* Keep Ganji together */
+        }
+
+        /* Ohaeng Colors */
+        .wood {
+            color: #2e7d32;
+        }
+
+        .fire {
+            color: #c62828;
+        }
+
+        .earth {
+            color: #f9a825;
+        }
+
+        .metal {
+            color: #424242;
+        }
+
+        .water {
+            color: #1565c0;
+        }
+
+        /* Graph */
+        .ohaeng-wrapper {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .ohaeng-item {
+            display: inline-block;
+            width: 40px;
+            margin: 0 10px;
+            vertical-align: bottom;
+        }
+
+        .ohaeng-bar {
+            background: #555;
+            width: 15px;
+            margin: 0 auto;
+            border-radius: 3px 3px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Global Watermark -->
+    <img class="watermark" src="{{ watermark_src }}" alt="watermark">
+
+    <!-- Global Fixed Header/Footer -->
+    <div class="page-header">명리심리연구소 프리미엄 사주</div>
+    <div class="page-footer"><span>명리심리연구소</span> 검색</div>
+
+    <!-- 
+       FLAT FLOW ARCHITECTURE
+       - No ".page" wrappers for content.
+       - Browser handles pagination naturally.
+       - H2 tags trigger new pages.
+    -->
+
+    <!-- 1. COVER PAGE (Keep wrapper for centering) -->
+    <div class="cover-wrapper">
+        <div class="cover-content">
+            <div class="cover-title">사주 분석 리포트</div>
+            <div class="cover-subtitle">당신의 삶을 밝히는 지혜</div>
+
+            <table class="info-table">
+                <tr>
+                    <td class="info-label">이름</td>
+                    <td class="info-value">{{ user_info.name }}</td>
+                </tr>
+                <tr>
+                    <td class="info-label">생년월일</td>
+                    <td class="info-value">{{ user_info.birth_date }}</td>
+                </tr>
+                <tr>
+                    <td class="info-label">발행일</td>
+                    <td class="info-value">{{ current_date }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 2. INTRO & SAJU GRID -->
+    <!-- Cover already has page-break-after, so no need for page-break-before here -->
+    <h2 class="chapter-title">사주 원국</h2>
+
+    <p>
+        본 리포트는 귀하의 사주 정보를 바탕으로 AI 명리학 엔진이 정밀 분석한 결과입니다.
+        아래는 귀하의 타고난 에너지 지도인 사주 원국표입니다.
+    </p>
+
+    <div class="saju-grid">
+        <!-- Reverse order: Hour -> Year -->
+        <div class="saju-col">
+            <span class="saju-header">시주 (Time)</span>
+            <span class="char-box {{ get_color_class(pillars.hour.gan) }}">{{ pillars.hour.gan }}</span>
+            <span class="char-box {{ get_color_class(pillars.hour.ji) }}">{{ pillars.hour.ji }}</span>
+        </div>
+        <div class="saju-col">
+            <span class="saju-header">일주 (Day)</span>
+            <span class="char-box {{ get_color_class(pillars.day.gan) }}">{{ pillars.day.gan }}</span>
+            <span class="char-box {{ get_color_class(pillars.day.ji) }}">{{ pillars.day.ji }}</span>
+        </div>
+        <div class="saju-col">
+            <span class="saju-header">월주 (Month)</span>
+            <span class="char-box {{ get_color_class(pillars.month.gan) }}">{{ pillars.month.gan }}</span>
+            <span class="char-box {{ get_color_class(pillars.month.ji) }}">{{ pillars.month.ji }}</span>
+        </div>
+        <div class="saju-col">
+            <span class="saju-header">년주 (Year)</span>
+            <span class="char-box {{ get_color_class(pillars.year.gan) }}">{{ pillars.year.gan }}</span>
+            <span class="char-box {{ get_color_class(pillars.year.ji) }}">{{ pillars.year.ji }}</span>
+        </div>
+    </div>
+
+    <!-- Ohaeng Graph -->
+    <div class="ohaeng-wrapper">
+        <h3 style="text-align:center; font-size:14pt; margin-bottom: 20px;">오행 분포도</h3>
+        <div style="height:150px; padding-top:20px;">
+            {% for element, count in ohaeng_counts.items() %}
+            <div class="ohaeng-item">
+                <div class="ohaeng-bar" style="height:{{ count * 20 }}px;"></div>
+                <div style="margin-top:5px; font-size:10pt;">{{ element }}</div>
+                <div style="font-weight:bold;">{{ count }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- 3. DYNAMIC CHAPTERS -->
+    {% for chapter_key, chapter_title in zip(chapter_keys, toc_structure) %}
+
+    <!-- Header forces new page -->
+    <h2 class="chapter-title" style="page-break-before: always;">{{ chapter_title }}</h2>
+
+    {% if expert_columns.get(chapter_key) %}
+    <div
+        style="background: rgba(0,0,0,0.03); padding: 20px; border-radius: 8px; margin-bottom: 30px; font-size: 10.5pt; font-style: italic; color: #444;">
+        {{ expert_columns[chapter_key] | trim }}
+    </div>
+    {% endif %}
+
+    <!-- Content flows naturally -->
+    <div>
+        {{ ai_analysis[chapter_key] | safe }}
+    </div>
+
+    {% endfor %}
+
+</body>
+
+</html>

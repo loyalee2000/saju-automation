@@ -1,0 +1,181 @@
+{
+  "basic_info": {
+    "name": "홍길동",
+    "birth_date": {
+      "solar": "1990-01-15",
+      "lunar": "1989-12-19",
+      "time": "10:30",
+      "year": 1990,
+      "month": 1,
+      "day": 15,
+      "hour": 10,
+      "minute": 30
+    },
+    "gender": "남",
+    "timezone": "Asia/Seoul"
+  },
+  "saju_palja": {
+    "year": {
+      "heavenly_stem": "경",
+      "earthly_branch": "오",
+      "animal": "말"
+    },
+    "month": {
+      "heavenly_stem": "정",
+      "earthly_branch": "축"
+    },
+    "day": {
+      "heavenly_stem": "갑",
+      "earthly_branch": "인"
+    },
+    "hour": {
+      "heavenly_stem": "기",
+      "earthly_branch": "사"
+    }
+  },
+  "ilju": {
+    "stem": "갑",
+    "branch": "인",
+    "description": "갑인일주"
+  },
+  "ohang_analysis": {
+    "wood": 3,
+    "fire": 2,
+    "earth": 2,
+    "metal": 1,
+    "water": 0,
+    "strength": "목 왕",
+    "weakness": "수 약"
+  },
+  "sipseong_analysis": {
+    "year_pillar": "편재",
+    "month_pillar": "상관",
+    "day_pillar": "일주",
+    "hour_pillar": "정인",
+    "main_sipseong": "상관격"
+  },
+  "sibiunseong_analysis": {
+    "year": "사",
+    "month": "쇠",
+    "day": "병",
+    "hour": "제왕"
+  },
+  "sibisinsal_gwiin": {
+    "cheoneulguiin": ["축", "미"],
+    "taekguiin": ["사", "해"],
+    "woldeokguiin": ["갑"],
+    "sinsal": ["백호", "도화살"]
+  },
+  "daeun": [
+    {
+      "age_range": "1-10",
+      "heavenly_stem": "무",
+      "earthly_branch": "자",
+      "description": "무자 대운"
+    },
+    {
+      "age_range": "11-20",
+      "heavenly_stem": "기",
+      "earthly_branch": "축",
+      "description": "기축 대운"
+    },
+    {
+      "age_range": "21-30",
+      "heavenly_stem": "경",
+      "earthly_branch": "인",
+      "description": "경인 대운"
+    },
+    {
+      "age_range": "31-40",
+      "heavenly_stem": "신",
+      "earthly_branch": "묘",
+      "description": "신묘 대운"
+    }
+  ],
+  "yeonun_2026": {
+    "year_stem": "병",
+    "year_branch": "오",
+    "description": "병오년",
+    "monthly_fortune": [
+      {
+        "month": 1,
+        "stem": "경",
+        "branch": "인",
+        "description": "경인월"
+      },
+      {
+        "month": 2,
+        "stem": "신",
+        "branch": "묘",
+        "description": "신묘월"
+      },
+      {
+        "month": 3,
+        "stem": "임",
+        "branch": "진",
+        "description": "임진월"
+      },
+      {
+        "month": 4,
+        "stem": "계",
+        "branch": "사",
+        "description": "계사월"
+      },
+      {
+        "month": 5,
+        "stem": "갑",
+        "branch": "오",
+        "description": "갑오월"
+      },
+      {
+        "month": 6,
+        "stem": "을",
+        "branch": "미",
+        "description": "을미월"
+      },
+      {
+        "month": 7,
+        "stem": "병",
+        "branch": "신",
+        "description": "병신월"
+      },
+      {
+        "month": 8,
+        "stem": "정",
+        "branch": "유",
+        "description": "정유월"
+      },
+      {
+        "month": 9,
+        "stem": "무",
+        "branch": "술",
+        "description": "무술월"
+      },
+      {
+        "month": 10,
+        "stem": "기",
+        "branch": "해",
+        "description": "기해월"
+      },
+      {
+        "month": 11,
+        "stem": "경",
+        "branch": "자",
+        "description": "경자월"
+      },
+      {
+        "month": 12,
+        "stem": "신",
+        "branch": "축",
+        "description": "신축월"
+      }
+    ]
+  },
+  "special_notes": {
+    "personality": "강직하고 추진력이 강함",
+    "career_tendency": "리더십 발휘 가능",
+    "health_caution": "간, 담 주의",
+    "lucky_direction": "동쪽",
+    "lucky_color": "녹색, 청색"
+  }
+}

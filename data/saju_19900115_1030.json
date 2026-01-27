@@ -1,0 +1,108 @@
+{
+  "basic_info": {
+    "birth_date": {
+      "solar": {
+        "date": "1990-01-15",
+        "year": 1990,
+        "month": 1,
+        "day": 15
+      },
+      "time": "10:30",
+      "hour": 10,
+      "minute": 30,
+      "is_lunar_input": false
+    },
+    "gender": "남",
+    "timezone": "Asia/Seoul"
+  },
+  "saju_palja": {
+    "year": {
+      "heavenly_stem": "경",
+      "earthly_branch": "오",
+      "animal": "말"
+    },
+    "month": {
+      "heavenly_stem": "무",
+      "earthly_branch": "인"
+    },
+    "day": {
+      "heavenly_stem": "병",
+      "earthly_branch": "자"
+    },
+    "hour": {
+      "heavenly_stem": "계",
+      "earthly_branch": "사"
+    }
+  },
+  "ilju": {
+    "stem": "병",
+    "branch": "자",
+    "description": "병자일주"
+  },
+  "ohang_analysis": {
+    "wood": 1,
+    "fire": 3,
+    "earth": 1,
+    "metal": 1,
+    "water": 2,
+    "strength": "화 왕",
+    "weakness": "목 약"
+  },
+  "sipseong_analysis": {
+    "year_pillar": "편재",
+    "month_pillar": "상관",
+    "day_pillar": "일주",
+    "hour_pillar": "정인",
+    "main_sipseong": "상관격"
+  },
+  "daeun": [
+    {
+      "age_range": "1-10",
+      "heavenly_stem": "기",
+      "earthly_branch": "묘",
+      "description": "기묘 대운"
+    },
+    {
+      "age_range": "11-20",
+      "heavenly_stem": "경",
+      "earthly_branch": "진",
+      "description": "경진 대운"
+    },
+    {
+      "age_range": "21-30",
+      "heavenly_stem": "신",
+      "earthly_branch": "사",
+      "description": "신사 대운"
+    },
+    {
+      "age_range": "31-40",
+      "heavenly_stem": "임",
+      "earthly_branch": "오",
+      "description": "임오 대운"
+    },
+    {
+      "age_range": "41-50",
+      "heavenly_stem": "계",
+      "earthly_branch": "미",
+      "description": "계미 대운"
+    },
+    {
+      "age_range": "51-60",
+      "heavenly_stem": "갑",
+      "earthly_branch": "신",
+      "description": "갑신 대운"
+    },
+    {
+      "age_range": "61-70",
+      "heavenly_stem": "을",
+      "earthly_branch": "유",
+      "description": "을유 대운"
+    },
+    {
+      "age_range": "71-80",
+      "heavenly_stem": "병",
+      "earthly_branch": "술",
+      "description": "병술 대운"
+    }
+  ]
+}

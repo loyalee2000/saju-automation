@@ -1,0 +1,96 @@
+<!-- Five Elements Chart Section -->
+<style>
+    .chart-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 200px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 12px;
+        border: 1px solid #eee;
+    }
+
+    .bar-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 15%;
+    }
+
+    .bar {
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        transition: height 0.5s ease;
+        position: relative;
+    }
+
+    .bar-label {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+
+    .bar-value {
+        position: absolute;
+        top: -25px;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        color: #555;
+    }
+
+    /* Colors */
+    .bg-wood {
+        background-color: #4CAF50;
+    }
+
+    .bg-fire {
+        background-color: #F44336;
+    }
+
+    .bg-earth {
+        background-color: #FFC107;
+    }
+
+    .bg-metal {
+        background-color: #9E9E9E;
+    }
+
+    .bg-water {
+        background-color: #2196F3;
+    }
+</style>
+
+<div class="card">
+    <div class="section-title" style="margin-top: 0;">
+        <h2>오행 분포 (Five Elements Distribution)</h2>
+    </div>
+
+    <div class="chart-container">
+        {% for element, count in ohaeng_counts.items() %}
+        <div class="bar-group">
+            <div class="bar bg-{{ get_element_eng(element) }}" style="height: {{ count * 20 }}px; max-height: 150px;">
+                <div class="bar-value">{{ count }}</div>
+            </div>
+            <div class="bar-label">{{ element }}</div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="expert-column">
+        <strong>오행 분석:</strong><br>
+        고객님의 사주는
+        {% for element, count in ohaeng_counts.items() %}
+        {% if count >= 3 %}
+        <strong>{{ element }}</strong> 기운이 매우 강하고,
+        {% endif %}
+        {% if count == 0 %}
+        <strong>{{ element }}</strong> 기운이 부족하며,
+        {% endif %}
+        {% endfor %}
+        전반적으로 {{ "균형 잡힌" if strength.score >= 4 and strength.score <= 6 else "특정 기운에 치우친" }} 흐름을 보이고 있습니다. </div>
+    </div>

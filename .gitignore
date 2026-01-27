@@ -1,0 +1,16 @@
+# Agent Architecture
+.tmp/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store

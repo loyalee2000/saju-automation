@@ -1,0 +1,597 @@
+{
+    "info": {
+        "name": "조원혁",
+        "input_date": "1981-06-17",
+        "calendar_type": "음력(Lunar)",
+        "is_leap_month": false,
+        "input_time": "모름(Unknown)",
+        "gender": "남성(Male)",
+        "summer_time_applied": false,
+        "longitude_correction": "N/A",
+        "birth_year": 1981,
+        "birth_month": 6,
+        "birth_day": 17,
+        "birth_hour": 0,
+        "birth_minute": 0,
+        "solar_date": "1981-06-17",
+        "lunar_date": "1981-05-16 "
+    },
+    "four_pillars": {
+        "year": {
+            "gan": "신(辛)",
+            "ji": "유(酉)",
+            "text": "신(辛)유(酉)",
+            "gan_desc": {
+                "nature": "보석/칼 (Jewelry/Knife)",
+                "keywords": [
+                    "예리함",
+                    "깔끔함",
+                    "자존심",
+                    "섬세함",
+                    "냉정함"
+                ]
+            },
+            "ji_desc": {
+                "animal": "닭 (Rooster)",
+                "meaning": "정밀함, 예리함, 단정함"
+            },
+            "pillar_desc": {
+                "summary": "보석/칼 (Jewelry/Knife) 위의 닭 (Rooster)",
+                "detail": "신(辛)(보석/칼 (Jewelry/Knife))의 기운과 유(酉)(닭 (Rooster))의 기운이 결합된 형태입니다. 천간의 ['예리함', '깔끔함', '자존심', '섬세함', '냉정함'] 성향과 지지의 정밀함, 예리함, 단정함 특성이 조화를 이룹니다."
+            }
+        },
+        "month": {
+            "gan": "갑(甲)",
+            "ji": "오(午)",
+            "text": "갑(甲)오(午)",
+            "gan_desc": {
+                "nature": "큰 나무 (Big Tree)",
+                "keywords": [
+                    "성장",
+                    "시작",
+                    "리더십",
+                    "고집",
+                    "인자함"
+                ]
+            },
+            "ji_desc": {
+                "animal": "말 (Horse)",
+                "meaning": "정점, 화려함, 역동성"
+            },
+            "pillar_desc": {
+                "summary": "큰 나무 (Big Tree) 위의 말 (Horse)",
+                "detail": "갑(甲)(큰 나무 (Big Tree))의 기운과 오(午)(말 (Horse))의 기운이 결합된 형태입니다. 천간의 ['성장', '시작', '리더십', '고집', '인자함'] 성향과 지지의 정점, 화려함, 역동성 특성이 조화를 이룹니다."
+            }
+        },
+        "day": {
+            "gan": "병(丙)",
+            "ji": "인(寅)",
+            "text": "병(丙)인(寅)",
+            "gan_desc": {
+                "nature": "태양 (Sun)",
+                "keywords": [
+                    "열정",
+                    "공명정대",
+                    "화려함",
+                    "급한 성격",
+                    "예의"
+                ]
+            },
+            "ji_desc": {
+                "animal": "호랑이 (Tiger)",
+                "meaning": "용맹, 시작, 추진력"
+            },
+            "pillar_desc": {
+                "summary": "태양 (Sun) 위의 호랑이 (Tiger)",
+                "detail": "병(丙)(태양 (Sun))의 기운과 인(寅)(호랑이 (Tiger))의 기운이 결합된 형태입니다. 천간의 ['열정', '공명정대', '화려함', '급한 성격', '예의'] 성향과 지지의 용맹, 시작, 추진력 특성이 조화를 이룹니다."
+            }
+        },
+        "hour": {
+            "gan": "모름",
+            "ji": "모름",
+            "text": "모름(Unknown)",
+            "gan_desc": {},
+            "ji_desc": {},
+            "pillar_desc": {
+                "summary": "시간 모름",
+                "detail": "분석 불가"
+            }
+        }
+    },
+    "five_elements": {
+        "목(Tree)": 2,
+        "화(Fire)": 2,
+        "토(Earth)": 0,
+        "금(Metal)": 2,
+        "수(Water)": 0
+    },
+    "daewoon": {
+        "direction": "역행",
+        "pillars": [
+            {
+                "age": 4,
+                "ganji": "계(癸)사(巳)",
+                "gan": "계(癸)",
+                "ji": "사(巳)",
+                "score": 30,
+                "vibe": "Bad"
+            },
+            {
+                "age": 14,
+                "ganji": "임(壬)진(辰)",
+                "gan": "임(壬)",
+                "ji": "진(辰)",
+                "score": 50,
+                "vibe": "Normal"
+            },
+            {
+                "age": 24,
+                "ganji": "신(辛)묘(卯)",
+                "gan": "신(辛)",
+                "ji": "묘(卯)",
+                "score": 70,
+                "vibe": "Good"
+            },
+            {
+                "age": 34,
+                "ganji": "경(庚)인(寅)",
+                "gan": "경(庚)",
+                "ji": "인(寅)",
+                "score": 70,
+                "vibe": "Good"
+            },
+            {
+                "age": 44,
+                "ganji": "기(己)축(丑)",
+                "gan": "기(己)",
+                "ji": "축(丑)",
+                "score": 50,
+                "vibe": "Normal"
+            },
+            {
+                "age": 54,
+                "ganji": "무(戊)자(子)",
+                "gan": "무(戊)",
+                "ji": "자(子)",
+                "score": 50,
+                "vibe": "Normal"
+            },
+            {
+                "age": 64,
+                "ganji": "정(丁)해(亥)",
+                "gan": "정(丁)",
+                "ji": "해(亥)",
+                "score": 30,
+                "vibe": "Bad"
+            },
+            {
+                "age": 74,
+                "ganji": "병(丙)술(戌)",
+                "gan": "병(丙)",
+                "ji": "술(戌)",
+                "score": 30,
+                "vibe": "Bad"
+            },
+            {
+                "age": 84,
+                "ganji": "을(乙)유(酉)",
+                "gan": "을(乙)",
+                "ji": "유(酉)",
+                "score": 70,
+                "vibe": "Good"
+            },
+            {
+                "age": 94,
+                "ganji": "갑(甲)신(申)",
+                "gan": "갑(甲)",
+                "ji": "신(申)",
+                "score": 70,
+                "vibe": "Good"
+            }
+        ]
+    },
+    "sibseong": {
+        "year_gan": {
+            "name": "정재",
+            "role": "Good"
+        },
+        "year_ji": {
+            "name": "정재",
+            "role": "Good"
+        },
+        "month_gan": {
+            "name": "편인",
+            "role": "Neutral"
+        },
+        "month_ji": {
+            "name": "겁재",
+            "role": "Bad"
+        },
+        "day_gan": {
+            "name": "비견",
+            "role": "Neutral"
+        },
+        "day_ji": {
+            "name": "편인",
+            "role": "Neutral"
+        },
+        "hour_gan": {
+            "name": "",
+            "role": ""
+        },
+        "hour_ji": {
+            "name": "",
+            "role": ""
+        }
+    },
+    "sinsal": {
+        "year": {
+            "gan": [
+                "현침살"
+            ],
+            "ji": [
+                "도화살",
+                "천을귀인",
+                "태극귀인"
+            ]
+        },
+        "month": {
+            "gan": [
+                "현침살"
+            ],
+            "ji": [
+                "현침살",
+                "도화살",
+                "양인살"
+            ]
+        },
+        "day": {
+            "gan": [
+                "월덕귀인"
+            ],
+            "ji": [
+                "역마살",
+                "홍염살",
+                "문곡귀인"
+            ]
+        },
+        "hour": {
+            "gan": [],
+            "ji": []
+        }
+    },
+    "interactions": [
+        "천간합(년-일): 신병합 (신병합)",
+        "원진(년-일): 유인원진",
+        "지지삼합(반합): 인오술 중 2자 (화국 기운)"
+    ],
+    "interaction_details": [
+        {
+            "type": "천간합",
+            "label": "년-일",
+            "pair": "신병",
+            "value": "신병합",
+            "outcome": "무승부"
+        },
+        {
+            "type": "원진",
+            "label": "년-일",
+            "pair": "유인",
+            "value": "성립",
+            "outcome": "무승부"
+        },
+        {
+            "type": "삼합",
+            "label": "반합",
+            "pair": "인오술",
+            "value": "화국",
+            "outcome": "무승부"
+        }
+    ],
+    "twelve_unseong": {
+        "year": "사",
+        "month": "제왕",
+        "day": "장생",
+        "hour": null
+    },
+    "gyeokguk": {
+        "name": "양인격",
+        "basis": "월지 지장간이 투출되지 않아 본기 '정'를 격으로 취용 (양일간 겁재 -> 양인격 변환)",
+        "desc": {
+            "name": "양인격",
+            "desc": "카리스마 장군"
+        }
+    },
+    "gongmang": "해당 없음",
+    "strength": {
+        "score": 60,
+        "verdict": "신강 (Strong)",
+        "verdict_code": "Strong",
+        "calc_log": [
+            "30",
+            "20",
+            "10"
+        ]
+    },
+    "yongsin_structure": {
+        "primary": {
+            "element": "금(Metal)",
+            "type": "억부용신",
+            "reason": "일간이 신강하여 재성을 용신으로 삼아 다스립니다."
+        },
+        "secondary": null,
+        "gisin": {
+            "element": "화(Fire)",
+            "type": "기신(Gisin)",
+            "reason": "용신인 금을 무정하게 극(Attack)하는 화 오행이 기신입니다."
+        },
+        "unlucky_items": {
+            "color": "적색/분홍(Red)",
+            "number": [
+                2,
+                7
+            ],
+            "desc": "화 기운이 강한 적색/분홍 색상이나 의류는 피하세요."
+        },
+        "lucky_color": "백색/흰색(White)",
+        "lucky_number": [
+            4,
+            9
+        ]
+    },
+    "health_analysis": {
+        "risks": [
+            {
+                "type": "불급 (Deficiency)",
+                "element": "토(Earth)",
+                "organs": "위장/비장",
+                "symptoms": "소화불량",
+                "advice": "[토 부족] 규칙적 식사 필요 해당 장기의 기능 저하를 주의하세요."
+            },
+            {
+                "type": "불급 (Deficiency)",
+                "element": "수(Water)",
+                "organs": "신장/방광",
+                "symptoms": "부종, 냉증",
+                "advice": "[수 부족] 체온 유지 필요 해당 장기의 기능 저하를 주의하세요."
+            }
+        ],
+        "summary": "총 2개의 건강 주의 항목이 발견되었습니다."
+    },
+    "comprehensive_analysis": {},
+    "luck_cycle": {
+        "yearly": [
+            {
+                "year": 2025,
+                "ganji": "을(乙)사(巳)"
+            },
+            {
+                "year": 2026,
+                "ganji": "병(丙)오(午)"
+            },
+            {
+                "year": 2027,
+                "ganji": "정(丁)미(未)"
+            },
+            {
+                "year": 2028,
+                "ganji": "무(戊)신(申)"
+            },
+            {
+                "year": 2029,
+                "ganji": "기(己)유(酉)"
+            },
+            {
+                "year": 2030,
+                "ganji": "경(庚)술(戌)"
+            },
+            {
+                "year": 2031,
+                "ganji": "신(辛)해(亥)"
+            },
+            {
+                "year": 2032,
+                "ganji": "임(壬)자(子)"
+            },
+            {
+                "year": 2033,
+                "ganji": "계(癸)축(丑)"
+            },
+            {
+                "year": 2034,
+                "ganji": "갑(甲)인(寅)"
+            }
+        ],
+        "monthly": [
+            {
+                "month": 2,
+                "ganji": "무(戊)인(寅)"
+            },
+            {
+                "month": 3,
+                "ganji": "기(己)묘(卯)"
+            },
+            {
+                "month": 4,
+                "ganji": "경(庚)진(辰)"
+            },
+            {
+                "month": 5,
+                "ganji": "신(辛)사(巳)"
+            },
+            {
+                "month": 6,
+                "ganji": "임(壬)오(午)"
+            },
+            {
+                "month": 7,
+                "ganji": "계(癸)미(未)"
+            },
+            {
+                "month": 8,
+                "ganji": "갑(甲)신(申)"
+            },
+            {
+                "month": 9,
+                "ganji": "을(乙)유(酉)"
+            },
+            {
+                "month": 10,
+                "ganji": "병(丙)술(戌)"
+            },
+            {
+                "month": 11,
+                "ganji": "정(丁)해(亥)"
+            },
+            {
+                "month": 12,
+                "ganji": "무(戊)자(子)"
+            },
+            {
+                "month": 1,
+                "ganji": "기(己)축(丑)"
+            }
+        ]
+    },
+    "sibseong_details": {
+        "year_gan": {
+            "name": {
+                "name": "정재",
+                "role": "Good"
+            },
+            "desc": {
+                "meaning": "극하되 음양 다름 (Wealth)",
+                "traits": "성실함, 꼼꼼함, 현실감각. 안정적입니다.",
+                "advice": "베푸는 마음을 가지세요."
+            }
+        },
+        "year_ji": {
+            "name": {
+                "name": "정재",
+                "role": "Good"
+            },
+            "desc": {
+                "meaning": "극하되 음양 다름 (Wealth)",
+                "traits": "성실함, 꼼꼼함, 현실감각. 안정적입니다.",
+                "advice": "베푸는 마음을 가지세요."
+            }
+        },
+        "month_gan": {
+            "name": {
+                "name": "편인",
+                "role": "Neutral"
+            },
+            "desc": {
+                "meaning": "나를 생하는 기운 (Insight)",
+                "traits": "직관력, 신비주의, 임기응변. 눈치가 빠릅니다.",
+                "advice": "현실 감각을 유지하세요."
+            }
+        },
+        "month_ji": {
+            "name": {
+                "name": "겁재",
+                "role": "Bad"
+            },
+            "desc": {
+                "meaning": "나와 같으나 음양 다름 (Rivals)",
+                "traits": "승부욕, 투쟁심, 강한 생존력. 목표지향적입니다.",
+                "advice": "공정한 경쟁을 추구하세요."
+            }
+        },
+        "day_gan": {
+            "name": {
+                "name": "비견",
+                "role": "Neutral"
+            },
+            "desc": {
+                "meaning": "나와 같은 기운 (Friends)",
+                "traits": "주체성, 독립심, 자존심. 자기 주장이 강합니다.",
+                "advice": "협동심과 경청이 필요합니다."
+            }
+        },
+        "day_ji": {
+            "name": {
+                "name": "편인",
+                "role": "Neutral"
+            },
+            "desc": {
+                "meaning": "나를 생하는 기운 (Insight)",
+                "traits": "직관력, 신비주의, 임기응변. 눈치가 빠릅니다.",
+                "advice": "현실 감각을 유지하세요."
+            }
+        },
+        "hour_gan": {
+            "name": {
+                "name": "",
+                "role": ""
+            },
+            "desc": {}
+        },
+        "hour_ji": {
+            "name": {
+                "name": "",
+                "role": ""
+            },
+            "desc": {}
+        }
+    },
+    "reference_data": {
+        "cheongan_ref": {
+            "갑(甲)": {
+                "nature": "큰 나무 (Big Tree)",
+                "keywords": [
+                    "성장",
+                    "시작",
+                    "리더십",
+                    "고집",
+                    "인자함"
+                ]
+            },
+            "병(丙)": {
+                "nature": "태양 (Sun)",
+                "keywords": [
+                    "열정",
+                    "공명정대",
+                    "화려함",
+                    "급한 성격",
+                    "예의"
+                ]
+            },
+            "신(辛)": {
+                "nature": "보석/칼 (Jewelry/Knife)",
+                "keywords": [
+                    "예리함",
+                    "깔끔함",
+                    "자존심",
+                    "섬세함",
+                    "냉정함"
+                ]
+            }
+        },
+        "jiji_ref": {
+            "인(寅)": {
+                "animal": "호랑이 (Tiger)",
+                "meaning": "용맹, 시작, 추진력"
+            },
+            "오(午)": {
+                "animal": "말 (Horse)",
+                "meaning": "정점, 화려함, 역동성"
+            },
+            "유(酉)": {
+                "animal": "닭 (Rooster)",
+                "meaning": "정밀함, 예리함, 단정함"
+            }
+        }
+    },
+    "sinsal_details": {
+        "태극귀인": "조력자, 말년복",
+        "역마살": "이동, 변화, 해외",
+        "천을귀인": "최고의 길신, 인덕, 전화위복",
+        "도화살": "인기, 매력, 예술성",
+        "현침살": "손재주, 예민함, 의료/기술",
+        "홍염살": "매력, 인기",
+        "문곡귀인": "문서, 예술",
+        "양인살": "권력, 카리스마, 생살여탈",
+        "월덕귀인": "부귀공명, 배우자복"
+    }
+}

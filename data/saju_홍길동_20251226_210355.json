@@ -1,0 +1,645 @@
+{
+    "info": {
+        "name": "홍길동",
+        "input_date": "1990-06-07",
+        "calendar_type": "음력(Lunar)",
+        "is_leap_month": false,
+        "input_time": "14:30",
+        "gender": "남성(Male)",
+        "summer_time_applied": false,
+        "longitude_correction": "N/A",
+        "birth_year": 1990,
+        "birth_month": 6,
+        "birth_day": 7,
+        "birth_hour": 14,
+        "birth_minute": 30,
+        "solar_date": "1990-06-07",
+        "lunar_date": "1990-05-15 "
+    },
+    "four_pillars": {
+        "year": {
+            "gan": "경(庚)",
+            "ji": "오(午)",
+            "text": "경(庚)오(午)",
+            "gan_desc": {
+                "nature": "바위/무쇠 (Rock/Iron)",
+                "keywords": [
+                    "결단력",
+                    "의리",
+                    "강인함",
+                    "냉철함",
+                    "숙살지기"
+                ]
+            },
+            "ji_desc": {
+                "animal": "말 (Horse)",
+                "meaning": "정점, 화려함, 역동성"
+            },
+            "pillar_desc": {
+                "summary": "바위/무쇠 (Rock/Iron) 위의 말 (Horse)",
+                "detail": "경(庚)(바위/무쇠 (Rock/Iron))의 기운과 오(午)(말 (Horse))의 기운이 결합된 형태입니다. 천간의 ['결단력', '의리', '강인함', '냉철함', '숙살지기'] 성향과 지지의 정점, 화려함, 역동성 특성이 조화를 이룹니다."
+            }
+        },
+        "month": {
+            "gan": "임(壬)",
+            "ji": "오(午)",
+            "text": "임(壬)오(午)",
+            "gan_desc": {
+                "nature": "큰 바다 (Ocean)",
+                "keywords": [
+                    "지혜",
+                    "유연함",
+                    "포용력",
+                    "통찰력",
+                    "음흉함"
+                ]
+            },
+            "ji_desc": {
+                "animal": "말 (Horse)",
+                "meaning": "정점, 화려함, 역동성"
+            },
+            "pillar_desc": {
+                "summary": "큰 바다 (Ocean) 위의 말 (Horse)",
+                "detail": "임(壬)(큰 바다 (Ocean))의 기운과 오(午)(말 (Horse))의 기운이 결합된 형태입니다. 천간의 ['지혜', '유연함', '포용력', '통찰력', '음흉함'] 성향과 지지의 정점, 화려함, 역동성 특성이 조화를 이룹니다."
+            }
+        },
+        "day": {
+            "gan": "계(癸)",
+            "ji": "묘(卯)",
+            "text": "계(癸)묘(卯)",
+            "gan_desc": {
+                "nature": "비/시냇물 (Rain/Stream)",
+                "keywords": [
+                    "지혜",
+                    "아이디어",
+                    "변화",
+                    "다정함",
+                    "예민함"
+                ]
+            },
+            "ji_desc": {
+                "animal": "토끼 (Rabbit)",
+                "meaning": "생명력, 도약, 꾸미기"
+            },
+            "pillar_desc": {
+                "summary": "비/시냇물 (Rain/Stream) 위의 토끼 (Rabbit)",
+                "detail": "계(癸)(비/시냇물 (Rain/Stream))의 기운과 묘(卯)(토끼 (Rabbit))의 기운이 결합된 형태입니다. 천간의 ['지혜', '아이디어', '변화', '다정함', '예민함'] 성향과 지지의 생명력, 도약, 꾸미기 특성이 조화를 이룹니다."
+            }
+        },
+        "hour": {
+            "gan": "기(己)",
+            "ji": "미(未)",
+            "text": "기(己)미(未)",
+            "gan_desc": {
+                "nature": "밭/정원 (Garden/Field)",
+                "keywords": [
+                    "실속",
+                    "자기관리",
+                    "포용",
+                    "의심",
+                    "어머니"
+                ]
+            },
+            "ji_desc": {
+                "animal": "양 (Sheep)",
+                "meaning": "온순, 희생, 마무리의 전 단계"
+            },
+            "pillar_desc": {
+                "summary": "밭/정원 (Garden/Field) 위의 양 (Sheep)",
+                "detail": "기(己)(밭/정원 (Garden/Field))의 기운과 미(未)(양 (Sheep))의 기운이 결합된 형태입니다. 천간의 ['실속', '자기관리', '포용', '의심', '어머니'] 성향과 지지의 온순, 희생, 마무리의 전 단계 특성이 조화를 이룹니다."
+            }
+        }
+    },
+    "five_elements": {
+        "목(Tree)": 1,
+        "화(Fire)": 2,
+        "토(Earth)": 2,
+        "금(Metal)": 1,
+        "수(Water)": 2
+    },
+    "daewoon": {
+        "direction": "순행",
+        "pillars": [
+            {
+                "age": 10,
+                "ganji": "계(癸)미(未)",
+                "gan": "계(癸)",
+                "ji": "미(未)",
+                "score": 70,
+                "vibe": "Good"
+            },
+            {
+                "age": 20,
+                "ganji": "갑(甲)신(申)",
+                "gan": "갑(甲)",
+                "ji": "신(申)",
+                "score": 70,
+                "vibe": "Good"
+            },
+            {
+                "age": 30,
+                "ganji": "을(乙)유(酉)",
+                "gan": "을(乙)",
+                "ji": "유(酉)",
+                "score": 70,
+                "vibe": "Good"
+            },
+            {
+                "age": 40,
+                "ganji": "병(丙)술(戌)",
+                "gan": "병(丙)",
+                "ji": "술(戌)",
+                "score": 30,
+                "vibe": "Bad"
+            },
+            {
+                "age": 50,
+                "ganji": "정(丁)해(亥)",
+                "gan": "정(丁)",
+                "ji": "해(亥)",
+                "score": 30,
+                "vibe": "Bad"
+            },
+            {
+                "age": 60,
+                "ganji": "무(戊)자(子)",
+                "gan": "무(戊)",
+                "ji": "자(子)",
+                "score": 70,
+                "vibe": "Good"
+            },
+            {
+                "age": 70,
+                "ganji": "기(己)축(丑)",
+                "gan": "기(己)",
+                "ji": "축(丑)",
+                "score": 50,
+                "vibe": "Normal"
+            },
+            {
+                "age": 80,
+                "ganji": "경(庚)인(寅)",
+                "gan": "경(庚)",
+                "ji": "인(寅)",
+                "score": 70,
+                "vibe": "Good"
+            },
+            {
+                "age": 90,
+                "ganji": "신(辛)묘(卯)",
+                "gan": "신(辛)",
+                "ji": "묘(卯)",
+                "score": 70,
+                "vibe": "Good"
+            },
+            {
+                "age": 100,
+                "ganji": "임(壬)진(辰)",
+                "gan": "임(壬)",
+                "ji": "진(辰)",
+                "score": 70,
+                "vibe": "Good"
+            }
+        ]
+    },
+    "sibseong": {
+        "year_gan": {
+            "name": "정인",
+            "role": "Good"
+        },
+        "year_ji": {
+            "name": "편재",
+            "role": "Bad"
+        },
+        "month_gan": {
+            "name": "겁재",
+            "role": "Good"
+        },
+        "month_ji": {
+            "name": "편재",
+            "role": "Bad"
+        },
+        "day_gan": {
+            "name": "비견",
+            "role": "Neutral"
+        },
+        "day_ji": {
+            "name": "식신",
+            "role": "Neutral"
+        },
+        "hour_gan": {
+            "name": "편관",
+            "role": "Neutral"
+        },
+        "hour_ji": {
+            "name": "편관",
+            "role": "Neutral"
+        }
+    },
+    "sinsal": {
+        "year": {
+            "gan": [],
+            "ji": [
+                "현침살",
+                "도화살"
+            ]
+        },
+        "month": {
+            "gan": [],
+            "ji": [
+                "현침살",
+                "도화살"
+            ]
+        },
+        "day": {
+            "gan": [],
+            "ji": [
+                "현침살",
+                "도화살",
+                "천을귀인"
+            ]
+        },
+        "hour": {
+            "gan": [],
+            "ji": [
+                "현침살",
+                "화개"
+            ]
+        }
+    },
+    "interactions": [
+        "천간충(일-시): 계기충 (충)",
+        "형(년-월): 오오형 (자형)",
+        "파(년-일): 오묘파",
+        "지지육합(년-시): 오미합 (화국)",
+        "파(월-일): 오묘파",
+        "지지육합(월-시): 오미합 (화국)",
+        "지지삼합(반합): 해묘미 중 2자 (목국 기운)"
+    ],
+    "interaction_details": [
+        {
+            "type": "천간충",
+            "label": "일-시",
+            "pair": "계기",
+            "value": "충",
+            "outcome": "무승부"
+        },
+        {
+            "type": "형",
+            "label": "년-월",
+            "pair": "오오",
+            "value": "자형",
+            "outcome": "무승부"
+        },
+        {
+            "type": "파",
+            "label": "년-일",
+            "pair": "오묘",
+            "value": "성립",
+            "outcome": "화 승리"
+        },
+        {
+            "type": "지지육합",
+            "label": "년-시",
+            "pair": "오미",
+            "value": "화",
+            "outcome": "무승부"
+        },
+        {
+            "type": "파",
+            "label": "월-일",
+            "pair": "오묘",
+            "value": "성립",
+            "outcome": "화 승리"
+        },
+        {
+            "type": "지지육합",
+            "label": "월-시",
+            "pair": "오미",
+            "value": "화",
+            "outcome": "무승부"
+        },
+        {
+            "type": "삼합",
+            "label": "반합",
+            "pair": "해묘미",
+            "value": "목국",
+            "outcome": "수 승리"
+        }
+    ],
+    "twelve_unseong": {
+        "year": "절",
+        "month": "절",
+        "day": "장생",
+        "hour": "묘"
+    },
+    "gyeokguk": {
+        "name": "편관격",
+        "basis": "월지 '오'의 중기 '기'가 천간에 투출됨",
+        "desc": {
+            "name": "편관격",
+            "desc": "해결사, 무관"
+        }
+    },
+    "gongmang": "해당 없음",
+    "strength": {
+        "score": 20,
+        "verdict": "신약 (Weak)",
+        "verdict_code": "Weak",
+        "calc_log": [
+            "10",
+            "10"
+        ]
+    },
+    "yongsin_structure": {
+        "primary": {
+            "element": "금(Metal)",
+            "type": "억부용신",
+            "reason": "일간이 신약하여 나를 돕는 인성(Resource)으로 기운을 보강합니다."
+        },
+        "secondary": {
+            "element": "수(Water)",
+            "type": "희신(Heeshin)",
+            "reason": "비겁이 돕습니다."
+        },
+        "gisin": {
+            "element": "화(Fire)",
+            "type": "기신(Gisin)",
+            "reason": "용신인 금을 무정하게 극(Attack)하는 화 오행이 기신입니다."
+        },
+        "unlucky_items": {
+            "color": "적색/분홍(Red)",
+            "number": [
+                2,
+                7
+            ],
+            "desc": "화 기운이 강한 적색/분홍 색상이나 의류는 피하세요."
+        },
+        "lucky_color": "백색/흰색(White)",
+        "lucky_number": [
+            4,
+            9
+        ]
+    },
+    "health_analysis": {
+        "risks": [
+            {
+                "type": "균형 (Balanced)",
+                "element": "전체",
+                "organs": "전신",
+                "symptoms": "없음",
+                "advice": "오행이 고루 분포되어 건강한 편입니다."
+            }
+        ],
+        "summary": "오행 균형이 양호합니다."
+    },
+    "comprehensive_analysis": {},
+    "luck_cycle": {
+        "yearly": [
+            {
+                "year": 2025,
+                "ganji": "을(乙)사(巳)"
+            },
+            {
+                "year": 2026,
+                "ganji": "병(丙)오(午)"
+            },
+            {
+                "year": 2027,
+                "ganji": "정(丁)미(未)"
+            },
+            {
+                "year": 2028,
+                "ganji": "무(戊)신(申)"
+            },
+            {
+                "year": 2029,
+                "ganji": "기(己)유(酉)"
+            },
+            {
+                "year": 2030,
+                "ganji": "경(庚)술(戌)"
+            },
+            {
+                "year": 2031,
+                "ganji": "신(辛)해(亥)"
+            },
+            {
+                "year": 2032,
+                "ganji": "임(壬)자(子)"
+            },
+            {
+                "year": 2033,
+                "ganji": "계(癸)축(丑)"
+            },
+            {
+                "year": 2034,
+                "ganji": "갑(甲)인(寅)"
+            }
+        ],
+        "monthly": [
+            {
+                "month": 2,
+                "ganji": "무(戊)인(寅)"
+            },
+            {
+                "month": 3,
+                "ganji": "기(己)묘(卯)"
+            },
+            {
+                "month": 4,
+                "ganji": "경(庚)진(辰)"
+            },
+            {
+                "month": 5,
+                "ganji": "신(辛)사(巳)"
+            },
+            {
+                "month": 6,
+                "ganji": "임(壬)오(午)"
+            },
+            {
+                "month": 7,
+                "ganji": "계(癸)미(未)"
+            },
+            {
+                "month": 8,
+                "ganji": "갑(甲)신(申)"
+            },
+            {
+                "month": 9,
+                "ganji": "을(乙)유(酉)"
+            },
+            {
+                "month": 10,
+                "ganji": "병(丙)술(戌)"
+            },
+            {
+                "month": 11,
+                "ganji": "정(丁)해(亥)"
+            },
+            {
+                "month": 12,
+                "ganji": "무(戊)자(子)"
+            },
+            {
+                "month": 1,
+                "ganji": "기(己)축(丑)"
+            }
+        ]
+    },
+    "sibseong_details": {
+        "year_gan": {
+            "name": {
+                "name": "정인",
+                "role": "Good"
+            },
+            "desc": {
+                "meaning": "생하되 음양 다름 (Wisdom)",
+                "traits": "학문, 인자함, 수용성. 사랑받는 기운입니다.",
+                "advice": "주체성을 기르세요."
+            }
+        },
+        "year_ji": {
+            "name": {
+                "name": "편재",
+                "role": "Bad"
+            },
+            "desc": {
+                "meaning": "내가 극하는 기운 (Windfall)",
+                "traits": "공간지각력, 통제력, 사업수완. 활동폭이 넓습니다.",
+                "advice": "계획적인 지출이 필요합니다."
+            }
+        },
+        "month_gan": {
+            "name": {
+                "name": "겁재",
+                "role": "Good"
+            },
+            "desc": {
+                "meaning": "나와 같으나 음양 다름 (Rivals)",
+                "traits": "승부욕, 투쟁심, 강한 생존력. 목표지향적입니다.",
+                "advice": "공정한 경쟁을 추구하세요."
+            }
+        },
+        "month_ji": {
+            "name": {
+                "name": "편재",
+                "role": "Bad"
+            },
+            "desc": {
+                "meaning": "내가 극하는 기운 (Windfall)",
+                "traits": "공간지각력, 통제력, 사업수완. 활동폭이 넓습니다.",
+                "advice": "계획적인 지출이 필요합니다."
+            }
+        },
+        "day_gan": {
+            "name": {
+                "name": "비견",
+                "role": "Neutral"
+            },
+            "desc": {
+                "meaning": "나와 같은 기운 (Friends)",
+                "traits": "주체성, 독립심, 자존심. 자기 주장이 강합니다.",
+                "advice": "협동심과 경청이 필요합니다."
+            }
+        },
+        "day_ji": {
+            "name": {
+                "name": "식신",
+                "role": "Neutral"
+            },
+            "desc": {
+                "meaning": "내가 생하는 기운 (Output)",
+                "traits": "낙천성, 연구심, 표현력. 창의성이 뛰어납니다.",
+                "advice": "한 분야에 매진하면 좋습니다."
+            }
+        },
+        "hour_gan": {
+            "name": {
+                "name": "편관",
+                "role": "Neutral"
+            },
+            "desc": {
+                "meaning": "나를 극하는 기운 (Power)",
+                "traits": "카리스마, 희생, 인내. 강인한 의지가 있습니다.",
+                "advice": "스트레스 관리가 중요합니다."
+            }
+        },
+        "hour_ji": {
+            "name": {
+                "name": "편관",
+                "role": "Neutral"
+            },
+            "desc": {
+                "meaning": "나를 극하는 기운 (Power)",
+                "traits": "카리스마, 희생, 인내. 강인한 의지가 있습니다.",
+                "advice": "스트레스 관리가 중요합니다."
+            }
+        }
+    },
+    "reference_data": {
+        "cheongan_ref": {
+            "기(己)": {
+                "nature": "밭/정원 (Garden/Field)",
+                "keywords": [
+                    "실속",
+                    "자기관리",
+                    "포용",
+                    "의심",
+                    "어머니"
+                ]
+            },
+            "경(庚)": {
+                "nature": "바위/무쇠 (Rock/Iron)",
+                "keywords": [
+                    "결단력",
+                    "의리",
+                    "강인함",
+                    "냉철함",
+                    "숙살지기"
+                ]
+            },
+            "임(壬)": {
+                "nature": "큰 바다 (Ocean)",
+                "keywords": [
+                    "지혜",
+                    "유연함",
+                    "포용력",
+                    "통찰력",
+                    "음흉함"
+                ]
+            },
+            "계(癸)": {
+                "nature": "비/시냇물 (Rain/Stream)",
+                "keywords": [
+                    "지혜",
+                    "아이디어",
+                    "변화",
+                    "다정함",
+                    "예민함"
+                ]
+            }
+        },
+        "jiji_ref": {
+            "묘(卯)": {
+                "animal": "토끼 (Rabbit)",
+                "meaning": "생명력, 도약, 꾸미기"
+            },
+            "오(午)": {
+                "animal": "말 (Horse)",
+                "meaning": "정점, 화려함, 역동성"
+            },
+            "미(未)": {
+                "animal": "양 (Sheep)",
+                "meaning": "온순, 희생, 마무리의 전 단계"
+            }
+        }
+    },
+    "sinsal_details": {
+        "천을귀인": "최고의 길신, 인덕, 전화위복",
+        "화개": "종교, 예술, 내면성찰",
+        "현침살": "손재주, 예민함, 의료/기술",
+        "도화살": "인기, 매력, 예술성"
+    }
+}

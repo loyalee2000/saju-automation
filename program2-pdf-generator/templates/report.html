@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Royalee Life Manual</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600&family=Gmarket+Sans:wght@400;700&display=swap');
+
+        body {
+            background-color: #FDFBF7;
+            /* Cream */
+            font-family: 'Noto Serif KR', serif;
+            color: #333;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Gmarket Sans', sans-serif;
+            color: #2c3e50;
+        }
+
+        .container {
+            width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background-color: #FDFBF7;
+            box-sizing: border-box;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid #eee;
+        }
+
+        /* Five Elements Colors */
+        .wood {
+            background-color: #E8F5E9;
+            color: #2E7D32;
+        }
+
+        .fire {
+            background-color: #FFEBEE;
+            color: #C62828;
+        }
+
+        .earth {
+            background-color: #FFFDE7;
+            color: #F9A825;
+        }
+
+        .metal {
+            background-color: #FAFAFA;
+            color: #616161;
+        }
+
+        .water {
+            background-color: #E3F2FD;
+            color: #1565C0;
+        }
+
+        .pillar-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 10px;
+            margin-bottom: 20px;
+        }
+
+        .pillar-box {
+            padding: 15px;
+            text-align: center;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .section-title {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .expert-column {
+            background-color: #f9f9f9;
+            border-left: 4px solid #555;
+            padding: 15px;
+            font-style: italic;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+
+        .ai-analysis {
+            font-size: 1.05em;
+            text-align: justify;
+        }
+
+        .toc-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .toc-list li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #ddd;
+            font-size: 1.1em;
+            font-family: 'Gmarket Sans', sans-serif;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.8em;
+            color: #888;
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cover Page -->
+    <div class="container">
+        <div style="text-align: center; margin-top: 100px; margin-bottom: 50px;">
+            <h1 style="font-size: 3em;">Royalee Life Manual</h1>
+            <p style="font-size: 1.5em; color: #555;">당신을 위한 100페이지의 인생 설명서</p>
+            <p style="font-size: 1.2em; color: #888; margin-top: 10px;">명리심리연구소 발행</p>
+            <hr style="width: 50px; border: 1px solid #333; margin-top: 30px;">
+            <p style="margin-top: 50px;">
+                이름: {{ user_info.name }}<br>
+                생년월일: {{ user_info.birth_date }} {{ user_info.birth_time }}
+            </p>
+        </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="container page-break">
+        <div class="card" style="padding: 40px;">
+            <h2 style="text-align: center; margin-bottom: 30px;">목차 (Table of Contents)</h2>
+            <ul class="toc-list">
+                {% for item in toc_structure %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="card" style="padding: 40px; margin-top: 20px;">
+            <h2 style="text-align: center; margin-bottom: 30px;">부록. 만세력 용어풀이</h2>
+            <ul class="toc-list">
+                {% for item in appendix_toc %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <!-- Prologue & Concern -->
+    <div class="container page-break">
+        <div class="card">
+            <h2>프롤로그</h2>
+            <div class="expert-column">
+                {{ expert_columns.intro }}
+            </div>
+        </div>
+
+        {% if user_info.concern %}
+        <div class="card" style="border-left: 5px solid #2196F3;">
+            <h3>당신의 고민:</h3>
+            <p style="font-style: italic; color: #555;">"{{ user_info.concern }}"</p>
+            <hr>
+            <h3>연구소장의 조언:</h3>
+            <p>
+                {{ ai_analysis.concern_advice | replace('\n', '<br>') | safe }}
+            </p>
+        </div>
+        {% endif %}
+
+        <!-- Saju Pillars Visualization -->
+        <div class="section-title">
+            <h2>당신의 사주 원국 (The Blueprint)</h2>
+        </div>
+        <table class="pillar-table">
+            <tr>
+                <th>시주 (Hour)</th>
+                <th>일주 (Day)</th>
+                <th>월주 (Month)</th>
+                <th>년주 (Year)</th>
+            </tr>
+            <tr>
+                {% for p in [pillars.hour, pillars.day, pillars.month, pillars.year] %}
+                <td>
+                    <div class="pillar-box {{ get_color_class(p.gan) }}">
+                        {{ p.gan }}
+                    </div>
+                    <div class="pillar-box {{ get_color_class(p.ji) }}">
+                        {{ p.ji }}
+                    </div>
+                </td>
+                {% endfor %}
+            </tr>
+        </table>
+
+        <!-- Five Elements Chart -->
+        <style>
+            .chart-container {
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-end;
+                height: 200px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                padding: 20px;
+                background: #fff;
+                border-radius: 12px;
+                border: 1px solid #eee;
+            }
+
+            .bar-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 15%;
+            }
+
+            .bar {
+                width: 100%;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                transition: height 0.5s ease;
+                position: relative;
+            }
+
+            .bar-label {
+                margin-top: 10px;
+                font-weight: bold;
+                font-size: 0.9em;
+            }
+
+            .bar-value {
+                position: absolute;
+                top: -25px;
+                width: 100%;
+                text-align: center;
+                font-weight: bold;
+                color: #555;
+            }
+
+            /* Colors */
+            .bg-wood {
+                background-color: #4CAF50;
+            }
+
+            .bg-fire {
+                background-color: #F44336;
+            }
+
+            .bg-earth {
+                background-color: #FFC107;
+            }
+
+            .bg-metal {
+                background-color: #9E9E9E;
+            }
+
+            .bg-water {
+                background-color: #2196F3;
+            }
+        </style>
+
+        <div class="card">
+            <div class="section-title" style="margin-top: 0;">
+                <h2>오행 분포 (Five Elements Distribution)</h2>
+            </div>
+
+            <div class="chart-container">
+                {% for element, count in ohaeng_counts.items() %}
+                <div class="bar-group">
+                    <div class="bar bg-{{ get_element_eng(element) }}"
+                        style="height: {{ count * 20 }}px; max-height: 150px;">
+                        <div class="bar-value">{{ count }}</div>
+                    </div>
+                    <div class="bar-label">{{ element }}</div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="expert-column">
+                <strong>오행 분석:</strong><br>
+                고객님의 사주는
+                {% for element, count in ohaeng_counts.items() %}
+                {% if count >= 3 %}
+                <strong>{{ element }}</strong> 기운이 매우 강하고,
+                {% endif %}
+                {% if count == 0 %}
+                <strong>{{ element }}</strong> 기운이 부족하며,
+                {% endif %}
+                {% endfor %}
+                전반적으로 {{ "균형 잡힌" if strength.score >= 4 and strength.score <= 6 else "특정 기운에 치우친" }} 흐름을 보이고 있습니다.
+                    </div>
+            </div>
+        </div>
+
+        <!-- Chapters 1-14 -->
+        {% for chapter_key, chapter_title in zip(chapter_keys, toc_structure) %}
+        <div class="container page-break">
+            <div class="section-title">
+                <h2>{{ chapter_title }}</h2>
+            </div>
+
+            <!-- Expert Column (Static) if available -->
+            {% if expert_columns.get(chapter_key) %}
+            <div class="card">
+                <div class="expert-column">
+                    {{ expert_columns[chapter_key] }}
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- AI Analysis (Dynamic) -->
+            <div class="card">
+                <div class="ai-analysis">
+                    {{ ai_analysis[chapter_key] | replace('\n', '<br>') | safe }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        <div class="container page-break">
+            <div class="footer">
+                &copy; 2025 Royalee Life Manual. All rights reserved.
+            </div>
+        </div>
+</body>
+
+</html>

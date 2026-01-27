@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pydantic
+korean_lunar_calendar
+python-dateutil==2.8.2
+pytz==2023.3

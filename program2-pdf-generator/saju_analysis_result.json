@@ -1,0 +1,336 @@
+{
+    "info": {
+        "name": "정은경",
+        "email": "unknown@example.com",
+        "input_date": "1977-06-08",
+        "calendar_type": "양력(Solar)",
+        "is_leap_month": false,
+        "input_time": "09:00",
+        "gender": "여성(Female)",
+        "adjusted_date": "1977-06-08 09:00",
+        "summer_time_applied": false,
+        "longitude_correction": "-32분 (서울 기준)"
+    },
+    "four_pillars": {
+        "year": {
+            "gan": "정(丁)",
+            "ji": "사(巳)",
+            "text": "정(丁)사(巳)"
+        },
+        "month": {
+            "gan": "병(丙)",
+            "ji": "오(午)",
+            "text": "병(丙)오(午)"
+        },
+        "day": {
+            "gan": "병(丙)",
+            "ji": "신(申)",
+            "text": "병(丙)신(申)"
+        },
+        "hour": {
+            "gan": "임(壬)",
+            "ji": "진(辰)",
+            "text": "임(壬)진(辰)"
+        }
+    },
+    "five_elements": {
+        "목(Tree)": 0,
+        "화(Fire)": 5,
+        "토(Earth)": 1,
+        "금(Metal)": 1,
+        "수(Water)": 1
+    },
+    "gyeokguk": {
+        "name": "양인격",
+        "basis": "월지 지장간이 투출되지 않아 본기 '정'를 격으로 취용 (양일간 겁재 -> 양인격 변환)",
+        "desc": {
+            "name": "양인격",
+            "desc": "카리스마 장군"
+        }
+    },
+    "daewoon": {
+        "direction": "순행",
+        "pillars": [
+            {
+                "age": 10,
+                "ganji": "정(丁)미(未)",
+                "year": 1986,
+                "end_year": 1995
+            },
+            {
+                "age": 20,
+                "ganji": "무(戊)신(申)",
+                "year": 1996,
+                "end_year": 2005
+            },
+            {
+                "age": 30,
+                "ganji": "기(己)유(酉)",
+                "year": 2006,
+                "end_year": 2015
+            },
+            {
+                "age": 40,
+                "ganji": "경(庚)술(戌)",
+                "year": 2016,
+                "end_year": 2025
+            },
+            {
+                "age": 50,
+                "ganji": "신(辛)해(亥)",
+                "year": 2026,
+                "end_year": 2035
+            },
+            {
+                "age": 60,
+                "ganji": "임(壬)자(子)",
+                "year": 2036,
+                "end_year": 2045
+            },
+            {
+                "age": 70,
+                "ganji": "계(癸)축(丑)",
+                "year": 2046,
+                "end_year": 2055
+            },
+            {
+                "age": 80,
+                "ganji": "갑(甲)인(寅)",
+                "year": 2056,
+                "end_year": 2065
+            },
+            {
+                "age": 90,
+                "ganji": "을(乙)묘(卯)",
+                "year": 2066,
+                "end_year": 2075
+            },
+            {
+                "age": 100,
+                "ganji": "병(丙)진(辰)",
+                "year": 2076,
+                "end_year": 2085
+            }
+        ]
+    },
+    "sibseong": {},
+    "sinsal": {
+        "year": {
+            "gan": [],
+            "ji": [
+                "역마",
+                "천주귀인",
+                "정록"
+            ]
+        },
+        "month": {
+            "gan": [],
+            "ji": [
+                "도화",
+                "양인살",
+                "현침살"
+            ]
+        },
+        "day": {
+            "gan": [],
+            "ji": [
+                "역마",
+                "암록",
+                "현침살",
+                "학당귀인",
+                "관귀학관",
+                "문창귀인"
+            ]
+        },
+        "hour": {
+            "gan": [
+                "괴강살"
+            ],
+            "ji": [
+                "화개",
+                "괴강살",
+                "과숙살"
+            ]
+        }
+    },
+    "interactions": [],
+    "interaction_details": [],
+    "twelve_unseong": {
+        "year": "건록",
+        "month": "제왕",
+        "day": "병",
+        "hour": "관대"
+    },
+    "jijanggan": {
+        "year": {
+            "chogi": "무",
+            "junggi": "경",
+            "bonggi": "병"
+        },
+        "month": {
+            "chogi": "병",
+            "junggi": "기",
+            "bonggi": "정"
+        },
+        "day": {
+            "chogi": "무",
+            "junggi": "임",
+            "bonggi": "경"
+        },
+        "hour": {
+            "chogi": "을",
+            "junggi": "계",
+            "bonggi": "무"
+        }
+    },
+    "sipsinsal": {
+        "year": "지살",
+        "month": "년살",
+        "day": "망신",
+        "hour": "천살"
+    },
+    "gongmang": "년지(사), 시지(진)",
+    "strength": {
+        "score": 61,
+        "verdict": "신강 (Strong)",
+        "calc_log": []
+    },
+    "yongsin_structure": {
+        "primary": {
+            "element": "토(Earth)",
+            "type": "억부용신(Suppress)",
+            "reason": "일간이 신강하여 기운을 설기하는 토 오행이 필요합니다. (식상)",
+            "eng": "Earth"
+        },
+        "secondary": {
+            "element": "금",
+            "type": "Heesin"
+        },
+        "gisin": {
+            "element": "목(Tree)",
+            "type": "기신",
+            "reason": "목 오행은 균형을 깨뜨릴 수 있습니다."
+        },
+        "lucky_color": "Yellow",
+        "lucky_number": [
+            0,
+            5
+        ],
+        "unlucky_items": {}
+    },
+    "multi_yongsin": [],
+    "luck_cycle": {
+        "yearly": [
+            {
+                "year": 2026,
+                "ganji": "병(丙)오(午)"
+            },
+            {
+                "year": 2027,
+                "ganji": "정(丁)미(未)"
+            },
+            {
+                "year": 2028,
+                "ganji": "무(戊)신(申)"
+            },
+            {
+                "year": 2029,
+                "ganji": "기(己)유(酉)"
+            },
+            {
+                "year": 2030,
+                "ganji": "경(庚)술(戌)"
+            },
+            {
+                "year": 2031,
+                "ganji": "신(辛)해(亥)"
+            },
+            {
+                "year": 2032,
+                "ganji": "임(壬)자(子)"
+            },
+            {
+                "year": 2033,
+                "ganji": "계(癸)축(丑)"
+            },
+            {
+                "year": 2034,
+                "ganji": "갑(甲)인(寅)"
+            },
+            {
+                "year": 2035,
+                "ganji": "을(乙)묘(卯)"
+            }
+        ],
+        "monthly": [
+            {
+                "month": 2,
+                "ganji": "경(庚)인(寅)"
+            },
+            {
+                "month": 3,
+                "ganji": "신(辛)묘(卯)"
+            },
+            {
+                "month": 4,
+                "ganji": "임(壬)진(辰)"
+            },
+            {
+                "month": 5,
+                "ganji": "계(癸)사(巳)"
+            },
+            {
+                "month": 6,
+                "ganji": "갑(甲)오(午)"
+            },
+            {
+                "month": 7,
+                "ganji": "을(乙)미(未)"
+            },
+            {
+                "month": 8,
+                "ganji": "병(丙)신(申)"
+            },
+            {
+                "month": 9,
+                "ganji": "정(丁)유(酉)"
+            },
+            {
+                "month": 10,
+                "ganji": "무(戊)술(戌)"
+            },
+            {
+                "month": 11,
+                "ganji": "기(己)해(亥)"
+            },
+            {
+                "month": 12,
+                "ganji": "경(庚)자(子)"
+            },
+            {
+                "month": 1,
+                "ganji": "신(辛)축(丑)"
+            }
+        ]
+    },
+    "health_analysis": {
+        "risks": [
+            {
+                "type": "목(Tree) 부족",
+                "element": "목(Tree)",
+                "organs": "전신",
+                "symptoms": "피로, 면역력 저하",
+                "advice": "목(Tree) 기운을 보충하는 식습관이 필요합니다."
+            },
+            {
+                "type": "화(Fire) 과다",
+                "element": "화(Fire)",
+                "organs": "전신",
+                "symptoms": "해당 장기의 과부하",
+                "advice": "화(Fire) 기운을 조절하는 습관이 필요합니다."
+            }
+        ],
+        "summary": "오행 건강 분석 결과입니다."
+    },
+    "comprehensive_analysis": {}
+}
