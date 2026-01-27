@@ -4,8 +4,13 @@ import json
 import re
 import math
 from datetime import datetime, time, timedelta
-import tkinter as tk
-from tkinter import messagebox, scrolledtext
+try:
+    import tkinter as tk
+    from tkinter import messagebox, scrolledtext
+except ImportError:
+    tk = None
+    messagebox = None
+    scrolledtext = None
 from korean_lunar_calendar import KoreanLunarCalendar
 import saju_data
 from saju_desc_data import *
