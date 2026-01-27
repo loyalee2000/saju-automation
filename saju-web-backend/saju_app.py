@@ -2291,12 +2291,15 @@ class SajuAnalyzer:
     
 
     
-import tkinter as tk
-from tkinter import ttk, messagebox
+try:
+    import tkinter as tk
+    from tkinter import ttk, messagebox, font
+except ImportError:
+    tk = None
+    ttk = None
+    messagebox = None
+    font = None
 import threading
-
-import tkinter as tk
-from tkinter import ttk, messagebox, font
 import json
 import threading
 
