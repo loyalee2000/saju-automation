@@ -222,7 +222,8 @@ export default function InputForm() {
                 location: formData.location
             };
 
-            const response = await axios.post("http://localhost:8000/api/analyze", payload);
+            const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+            const response = await axios.post(`${apiUrl}/api/analyze`, payload);
             setResult(response.data);
 
         } catch (err: any) {
