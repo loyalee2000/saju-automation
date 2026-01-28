@@ -50,12 +50,21 @@ function formatResultToText(data: SajuResult): string {
 년주 천간: ${pillars.year.gan} / 지지: ${pillars.year.ji}
 (참고: 상세 십성은 별도 표기)
 
-【 지장간 (支藏干) 】
-시지: ${Array.isArray(data.jijanggan?.hour) ? data.jijanggan.hour.join(', ') : data.jijanggan?.hour || '-'}
-일지: ${Array.isArray(data.jijanggan?.day) ? data.jijanggan.day.join(', ') : data.jijanggan?.day || '-'}
-월지: ${Array.isArray(data.jijanggan?.month) ? data.jijanggan.month.join(', ') : data.jijanggan?.month || '-'}
-년지: ${Array.isArray(data.jijanggan?.year) ? data.jijanggan.year.join(', ') : data.jijanggan?.year || '-'}
 
+    const formatJijanggan = (j: any) => {
+        if (!j || typeof j !== 'object') return '-';
+        if (Array.isArray(j)) return j.join(', '); // Backward compatibility
+        const parts = [j.chogi, j.junggi, j.bonggi].filter(Boolean);
+        return parts.length > 0 ? parts.join(', ') : '-';
+    };
+
+    text += `
+【 지장간(支藏干) 】
+    시지: ${ formatJijanggan(data.jijanggan?.hour) }
+    일지: ${ formatJijanggan(data.jijanggan?.day) }
+    월지: ${ formatJijanggan(data.jijanggan?.month) }
+    년지: ${ formatJijanggan(data.jijanggan?.year) }
+    `;
 【 십이운성 (十二運星) 】
 시지: ${data.twelve_unseong?.hour?.stage || '-'}
 일지: ${data.twelve_unseong?.day?.stage || '-'}
