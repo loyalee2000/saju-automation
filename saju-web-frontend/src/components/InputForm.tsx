@@ -16,6 +16,13 @@ function formatResultToText(data: SajuResult): string {
     const info = data.info;
     const pillars = data.four_pillars;
 
+    const formatJijanggan = (j: any) => {
+        if (!j || typeof j !== 'object') return '-';
+        if (Array.isArray(j)) return j.join(', ');
+        const parts = [j.chogi, j.junggi, j.bonggi].filter(Boolean);
+        return parts.length > 0 ? parts.join(', ') : '-';
+    };
+
     let text = `
 ━━━━━━━━━━━━━━━━━━━━━━
 🌙 온율 만세력 - 사주분석 결과
@@ -49,22 +56,12 @@ function formatResultToText(data: SajuResult): string {
 월주 천간: ${pillars.month.gan} / 지지: ${pillars.month.ji}
 년주 천간: ${pillars.year.gan} / 지지: ${pillars.year.ji}
 (참고: 상세 십성은 별도 표기)
+【 지장간 (支藏干) 】
+시지: ${formatJijanggan(data.jijanggan?.hour)}
+일지: ${formatJijanggan(data.jijanggan?.day)}
+월지: ${formatJijanggan(data.jijanggan?.month)}
+년지: ${formatJijanggan(data.jijanggan?.year)}
 
-
-    const formatJijanggan = (j: any) => {
-        if (!j || typeof j !== 'object') return '-';
-        if (Array.isArray(j)) return j.join(', '); // Backward compatibility
-        const parts = [j.chogi, j.junggi, j.bonggi].filter(Boolean);
-        return parts.length > 0 ? parts.join(', ') : '-';
-    };
-
-    text += `
-【 지장간(支藏干) 】
-    시지: ${ formatJijanggan(data.jijanggan?.hour) }
-    일지: ${ formatJijanggan(data.jijanggan?.day) }
-    월지: ${ formatJijanggan(data.jijanggan?.month) }
-    년지: ${ formatJijanggan(data.jijanggan?.year) }
-    `;
 【 십이운성 (十二運星) 】
 시지: ${data.twelve_unseong?.hour?.stage || '-'}
 일지: ${data.twelve_unseong?.day?.stage || '-'}
